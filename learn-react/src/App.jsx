@@ -8,6 +8,7 @@ import ThemeButton from './components/ThemeButton';
 
 function App() {
   const [rateNum, setRateNum] = useState(() => {
+    console.log('123')
     const savedData = localStorage.getItem('rating');
     if (savedData) {
       try {
